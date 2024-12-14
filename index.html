@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  
+    <div class="jogadores">
+      <h2>Jogadores</h2>
+      <label class="texto_jogadores" for="jogador1">Jogador 1: </label>
+      <input type="text" id="jogador1" />
+      <br />
+      <label class="texto_jogadores" for="jogador2">Jogador 2: </label>
+      <input type="text" id="jogador2" />
+      <br />
+      <input type="button" value="Iniciar" style="margin-top: 4px; height: 25px; width: 150px; font-size: 14px"
+        onclick="javascript: initGame();" />
+    </div>
+
+
+    <h3 id="jogadorAtual"></h3>
+
+    <div id="game" style="visibility: hidden;">
+      <table cellpadding="0" cellspacing="0" border="1">
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  
+
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
